@@ -1,0 +1,50 @@
+<section class="center col s12 m6 prop">
+    <div class="card" style="overflow: hidden !important;">
+    <a <?php echo "href='p/?p=$prop_id&c=$casa' "; ?>>
+        <div class="col s12 m6">
+            <div class="circulo">
+                <img src="src/img/aguardando.png" class="responsive-img">
+            </div>
+            <div class="titulo">
+                <?php echo $prop_siglaTipo." ".$prop_numero."/".$prop_ano; ?>
+            </div>
+        </div>
+        <div class="col s12 m6 left-align" style="height: 260px;
+    overflow: hidden;">
+            <p><small>Assuntos Relacionados:</small></p>
+            <?php
+                
+        // ["DetalheMateria"]["Materia"]["IdentificacaoMateria"]["CodigoMateria"]
+        // ["DetalheMateria"]["Materia"]["IdentificacaoMateria"]["SiglaCasaIdentificacaoMateria"]
+        // ["DetalheMateria"]["Materia"]["IdentificacaoMateria"]["NomeCasaIdentificacaoMateria"]
+        // ["DetalheMateria"]["Materia"]["IdentificacaoMateria"]["SiglaSubtipoMateria"]
+        // ["DetalheMateria"]["Materia"]["IdentificacaoMateria"]["DescricaoSubtipoMateria"]
+        // ["DetalheMateria"]["Materia"]["IdentificacaoMateria"]["NumeroMateria"]
+        // ["DetalheMateria"]["Materia"]["IdentificacaoMateria"]["AnoMateria"]
+        // ["DetalheMateria"]["Materia"]["IdentificacaoMateria"]["IndicadorTramitando"]
+        // ["DetalheMateria"]["Materia"]["IdentificacaoMateria"]["DadosBasicosMateria"]["EmentaMateria"]
+        // ["DetalheMateria"]["Materia"]["IdentificacaoMateria"]["DadosBasicosMateria"]["IndexacaoMateria"]
+        // ["DetalheMateria"]["Materia"]["IdentificacaoMateria"]["DadosBasicosMateria"]["IndicadorComplementar"]
+        // ["DetalheMateria"]["Materia"]["IdentificacaoMateria"]["DadosBasicosMateria"]["DataApresentacao"]
+        // ["DetalheMateria"]["Materia"]["IdentificacaoMateria"]["DadosBasicosMateria"]["DataLeitura"]
+        // ["DetalheMateria"]["Materia"]["IdentificacaoMateria"]["DadosBasicosMateria"]["NaturezaMateria"]
+
+
+
+                // echo "<b>keywords:</b>".$result2["dados"]["keywords"]."<br>";
+                $tags = explode(", ", $result2["dados"]["keywords"]);
+                for($j=0;$j<count($tags);$j++){
+                    echo "<div class='chip truncate'>".$tags[$j]."</div>";
+                }
+            ?>
+        </div>
+    </a>
+    </div>
+</section>
+
+
+
+
+
+
+   

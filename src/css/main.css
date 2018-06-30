@@ -1,0 +1,70 @@
+html{
+    background-color: #fafafa;
+    min-height: 100%;
+}
+
+@keyframes animatedBackground {
+	from { background-position: 0 0; }
+	to { background-position: 100% 0; }
+  }
+
+
+*{
+    transition: 1s all;
+}
+
+header.ceu-mov{
+    background-image: url("/cpbsb/parlathon/src/img/ceu.jpg");
+    background-size: auto 112%;
+    background-attachment: cover;
+    background-repeat: repeat-x;
+    animation: animatedBackground 15s alternate infinite;
+    padding: 150px 10px;
+}
+
+
+h1{
+    color: #4a7cae;
+    font-weight: bolder !important;
+    background-color: #fcca47;
+    margin: 2.8rem auto 1.68rem auto !important;
+    width: max-content;
+}
+
+
+.prop{
+    margin-bottom: 20px;
+}
+
+.prop .circulo{
+    background-color: #fff1ab;
+    border-radius: 200px;
+    width: max-content;
+    margin: 15px auto;
+    padding: 40px;
+    background-position-x: -8px;
+}
+.prop .circulo img{
+    /* object-fit:  cover; */
+    width: 100px;
+    height: 100px;
+    /* object-position: -10px -10px; */
+}
+.prop .titulo{
+    /* color:  #4a7cae; */
+    color: orange;
+    font-weight:  bold;
+    font-size:  2em;
+    background-color: white;
+    padding: 15px;
+    width:  max-content;
+    margin: -47px auto 0 auto;
+    max-width: 100%;
+}
+
+.prop .chip{
+    font-size: 11px !important;
+    color: #4a7cae !important;
+    padding: 0 9px !important;
+    background-color: #f0f5f9 !important;
+}
